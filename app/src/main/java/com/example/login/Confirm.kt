@@ -1,8 +1,10 @@
 package com.example.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
@@ -18,6 +20,11 @@ class Confirm : AppCompatActivity() {
         view1 = findViewById(R.id.view1)
         view2 = findViewById(R.id.view2)
         view3 = findViewById(R.id.view3)
+        val button = findViewById<Button>(R.id.confirmButton)
+        button.setOnClickListener {
+            val intent = Intent(this,Tabactivity::class.java)
+            startActivity(intent)
+        }
         Log.d("Intent shit", "onCreate: $intent.")
 
         view1.text = intent.getStringExtra("name")
