@@ -15,6 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:tabBackground="@color/grey"
         app:tabIndicatorColor="#3F51B5"
         app:tabSelectedTextColor="@color/white"
         app:tabTextColor="@color/black"
