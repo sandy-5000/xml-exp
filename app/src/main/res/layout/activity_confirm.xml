@@ -7,7 +7,7 @@
     tools:context=".Confirm">
 
     <TextView
-        android:id="@+id/main"
+        android:id="@+id/myApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My App"
@@ -25,7 +25,7 @@
         android:text="Home Screen"
         android:layout_marginTop="32dp"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:layout_constraintTop_toBottomOf="@+id/myApp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
     />
@@ -50,12 +50,14 @@
             android:text="your name"
         />
         <TextView
+            android:id="@+id/view2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:text="9009009009"
         />
         <TextView
+            android:id="@+id/view3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
